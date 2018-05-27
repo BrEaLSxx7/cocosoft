@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Cocosoft</title>
+	<link rel="stylesheet" href="./css/bootstrap-reboot.min.css">
+	<link rel="stylesheet" href="./css/bootstrap.min.css">
+	<link rel="stylesheet" href="./css/mycss.css">
+</head>
+
+<body>
+	<nav class="navbar">Cocosoft
+	</nav>
+	<div class="card main">
+		<div class="card-body">
+			<form id="form">
+				<div class="form-group">
+					<label for="nombre">Nombre</label>
+					<input type="text" class="form-control" id="nombre" placeholder="Ingrese el nombre">
+				</div>
+				<div class="form-group">
+					<label for="cc">Cedula ciudadania</label>
+					<input type="number" class="form-control" id="cc" placeholder="Cedula">
+				</div>
+				<div class="form-group">
+					<label for="sexo">Sexo</label>
+					<select class="form-control" id="sexo">
+						<option value="null" selected>Seleccione sexo</option>
+						<option value="1">Hombre</option>
+						<option value="2">Mujer</option>
+					</select>
+				</div>
+				<div class="form-group">
+					<label for="grupo">Grupo</label>
+					<input type="text" class="form-control" id="grupo" placeholder="Ingrese nombre del grupo">
+				</div>
+				<div class="actions">
+					<button type="button" onclick="add()" class="btn btn-primary">Agregar</button>
+					<button type="button" class="btn btn-primary" href="localhost:7000/reportes.html">Reportes</button>
+				</div>
+			</form>
+		</div>
+	</div>
+	<script src="./js/jquery-3.3.1.min.js"></script>
+	<script src="./js/popper.min.js"></script>
+	<script src="./js/bootstrap.min.js"></script>
+	<script src="./js/index.js"></script>
+</body>
+
+</html>

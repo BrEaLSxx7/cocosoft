@@ -1,0 +1,38 @@
+body {
+	height: 100vh;
+	width: 100vw;
+}
+
+body>nav {
+	background-color: black !important;
+	height: 8vh;
+	color: white;
+}
+
+.main {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(3, 1fr);
+	width: 100vw;
+	height: 92vh;
+	background-image: url('../img.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.card-body {
+	grid-row: 2 / span 1;
+	grid-column: 2/ span 1;
+	background-color: black;
+	color: white;
+}
+
+.actions {
+	display: flex;
+	justify-content: space-between;
+}
+
+.actions>button {
+	width: 40%;
+}
